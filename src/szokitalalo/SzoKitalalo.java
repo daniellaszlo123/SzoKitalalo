@@ -42,6 +42,8 @@ public class SzoKitalalo {
             System.out.print("'"+elsoT+"'"+" betű benne van.");
         }else if(masodikT==elsoSz || masodikT==masodikSz){
             System.out.print("'"+masodikT+"'"+" betű benne van.");
+        }else{
+            System.out.println("Egyik betű sem szerepel a szóban.");
         }
 
     }
