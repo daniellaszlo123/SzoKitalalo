@@ -11,7 +11,7 @@ public class SzoKitalalo {
 
     private static String valaszt() {
         int egySzo = rnd.nextInt(3);
-        System.out.println(egySzo);
+        //System.out.println(egySzo);
         return szavak[egySzo];
     }
 
@@ -58,11 +58,11 @@ public class SzoKitalalo {
     private static void newGame() {
         System.out.println("Szeretnél játstszani még egy kört? (I/N)");
         String awn = scanner.nextLine();
-        while (awn == "I" && awn == "i" && awn == "N" && awn == "n") {
+        while (!(awn.equals("I") || awn.equals("N"))) {
             System.out.println("Szeretnél játstszani még egy kört? (I/N)");
             awn = scanner.nextLine();
         }
-        if (awn == "I" || awn == "i") {
+        if (awn.equals("I")) {
             dontes();
         } else {
             System.out.println("Köszönjük hogy játszottál");
