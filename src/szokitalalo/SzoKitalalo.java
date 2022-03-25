@@ -39,7 +39,7 @@ public class SzoKitalalo {
 
     private static void dontes() {
         String szavunk = valaszt();
-        System.out.println(szavunk);
+        //System.out.println(szavunk);
         String tipp = beker();
         char elsoT = tipp.charAt(0);
         char masodikT = tipp.charAt(1);
